@@ -255,14 +255,14 @@ function envioEmail (emailTo , codToken , nomeSala  , msgEmailHTML , msgEmailTex
 		port : 465 ,
 		secure : true ,
 		auth: {
-			user : process.env.MAIL_USER , // process.env.MAIL_USER  'samuelsouto21@gmail.com' 
-			pass:  process.env.MAIL_PASSWORD , // 'gtgm tdbw nwcy mpmu'
+			user : process.env.MAIL_USER , // process.env.MAIL_USER   
+			pass:  process.env.MAIL_PASSWORD , // ''
 		}
 	 });
 
 	 
 	 transport.sendMail({ 
-		 from : `teste email ${process.env.HOST_EMAIL}` , /*<samuelsouto21@gmail.com>*/ 
+		 from : `teste email ${process.env.HOST_EMAIL}` ,  
 		 to: emailTo ,
 		 subject : 'enviando email teste node',		 
 		 html : msgEmailHTML, 
