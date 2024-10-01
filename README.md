@@ -1,4 +1,4 @@
-- 👋 Olá , eu sou o Samuel Souto dos Santos / @sassa-afk 👀 
+- 👋 Olá , eu sou o Samuel Souto dos Santos / @sassa-afk 👀 ..
 - Tenho interesse na área de desenvolvimento de software 🌱 
 - Atualmente estudo e criando projetos universitários em linguagens de programação introduzida em meu curso S.I, no qual me encontro no quinto período. 
 - 📫 Você consegue chegar até mim através do email samuelsouto21@gmail.com . 
