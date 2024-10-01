@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatizando</title>
+    <link rel="stylesheet" href="public/css/css.css">
+    <script src="public/js/js.js"></script>
+</head>
+<body>
+    
+        <div class="menu_barra"></div>
+         
+        <div class="icom1">
+            <!-- ================== -->
+            <button class="btn_barras_fixa" onclick="openModal()">Como funciona </button>
+
+            <div class ="modal"> 
+                <div class = "modal_conteiner">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div class = "texto"></div>
+                </div>
+            </div>
+
+
+            <!-- <=============== > -->
+            <a href="https://github.com/sassa-afk/Sala-de-Chat-com-Autentica-o-JWT-e-Comunica-o-em-Tempo-Real-chatizando.git"><button class="btn_barras_fixa" >Projeto no Gith Hub</button></a>
+        </div>
+        
+        <div class="cont1">
+            <div class="aux_margin_smartphone">
+                <center>
+                    <h1>Chatizando</h1>
+                </center>
+            </div>
+            <h3>Bem-vindo ao chatizando! <br><br> Seu bate-papo virtual exclusivo e temporário!</h3>     
+            <hr>
+
+            <div class="icom2"></div>
+
+            <button class="mainmenubtn_geral" onclick="botaoExpansivo('gera_token','acessar_sala')">Nova sala</button>
+
+            <div class="gera_token">
+                <input type="text" id="newNomeSala" class="custom-text-input_geral1" placeholder="Insira o nome da sala:">
+                <script>
+                    localStorage.setItem('token','');
+                    localStorage.setItem('email','');
+                    localStorage.setItem('nomeChat','');
+
+                    if(localStorage.getItem('token') !== '' || localStorage.getItem('email') !== '' || localStorage.getItem('nomeChat') !== '') {
+                            location.reload();
+
+                    }
+
+                    // console.log('token atual : '+localStorage.getItem('token')); 
+                    // console.log('email atual : '+localStorage.getItem('email'));
+                    // console.log('chat atual : '+localStorage.getItem('nomeChat'));  
+
+                </script>
+                <input type="text" id="newNomeAdm" class="custom-text-input_geral1" placeholder="Insira o e-mail do usuário :">
+                
+                <select id="idTempoChat" class="mainmenubtn">
+                   <OPTION value="30min">30 minutos de duração de chat </option> 
+                    <option value="1h">1 hora de duração de chat</option>
+                    <option value="6h">6 horas de duração do chat</option>
+                    <option value="8h">8 horas de duração do chat</option>
+                    <option value="12h">12 horas de duração do chat</option>
+                    <option value="24h">24 horas de duração do chat</option>
+                </select>
+                
+                <button class="mainmenubtn" onclick="gararSala()">Criar sala</button>
+            </div>
+
+            <button class="mainmenubtn_geral" onclick="botaoExpansivo('acessar_sala','gera_token')">Acessar sala criada</button>
+
+
+            <div class="acessar_sala">
+                <input type="text" id="nomeUserCriado" class="custom-text-input_geral1" placeholder="Insira seu e-mail registrado para acessar">
+                <input type="text" id="NomeSalaCriada" class="custom-text-input_geral1" placeholder="Insira o nome da sala:">
+                <input type="text" id="TokenCriado" class="custom-text-input_geral1" placeholder="Insira o token de acesso da sala:">
+                <button class="mainmenubtn" onclick="autorizaChat()">Acessar</button>
+
+            </div>
+        </div>
+     
+</body>
+</html>
+
+

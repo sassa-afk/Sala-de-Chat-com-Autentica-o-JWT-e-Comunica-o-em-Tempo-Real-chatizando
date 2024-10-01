@@ -1,0 +1,299 @@
+body {
+    background: linear-gradient(to bottom left, #0000FF, #1E90FF, #87CEFA);
+    height: 100vh;  
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.corpo_Auth {
+	display : inline  ;
+     
+}
+
+hr {
+    height: 2px; 
+    border: none; 
+    background-color: PaleGoldenrod;
+}
+
+h1 {
+    margin-top: 15%;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 60px;
+}
+
+h3 {
+    margin: 2%;
+    color: white;
+}
+
+h4 {
+    margin: 1%;
+    color: white;
+        font-size: 60px;
+      color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+
+
+}
+
+/*================================*/
+.modal { 
+    display: none;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);  
+    color: white;
+    z-index: 1000;  
+    overflow: hidden;
+}
+
+.modal_conteiner {
+    background-color: rgba(0, 0, 0, 0.9); 
+    width: 90vw;  
+    height: 90vh;  
+    margin: 5vh auto; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow-y: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);  
+}
+
+.modal_conteiner p {
+    flex-grow: 1;
+    margin: 0;
+    text-align: left;
+    line-height: 1.6;
+/*    word-wrap: break-word;*/
+            font-size: 15px;
+
+}
+
+.close {
+    position: absolute;  
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;  
+    font-weight: bold;
+    transition: color 0.4s ease;   
+}
+
+.close:hover {
+    color: orange;  
+}
+
+
+/*================================*/
+.icom1 {
+    background-image: url('/public/imagens/f1-removebg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.0);
+    position : fixed ;
+   
+}
+
+/*.cont1 {
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: block; 
+    background-color: rgba(0, 0, 0, 0.1);   
+    margin-left: 55%;
+    margin-top: 6%; 
+    margin-bottom: 4%;
+}*/
+
+.menu_barra {
+    width: 100%;
+    height: 5%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    position: fixed;
+    display: inline-block;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);  
+}
+
+.btn_barras_fixa {
+    background-color: Purple;
+    color: white;
+    font-size: 15px;
+    margin-left: 0%;
+    height: 5%;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_barras_fixa:hover {
+    background-color: blueviolet;
+}
+
+.mainmenubtn_geral {
+    background-color: Peru;
+    color: white;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 70px;
+    margin-top: 4%;
+}
+
+.mainmenubtn_geral:hover {
+    background-color: blueviolet;
+}
+
+.custom-text-input_geral1 {
+    margin-top: 2%;
+    display: inline-block;
+    width: 99%;
+    font-size: 20px;
+}
+
+.custom-text-input_geral1 input {
+    margin-left: 0%;
+    background-color: transparent;
+    border: 2px solid #ccc;  
+    border-radius: 5px;
+    color: white; 
+}
+
+.custom-text-input_geral1 input:focus {
+    border-color: greenyellow;
+}
+
+.acessar_sala {
+    display: none;
+}
+
+.gera_token {
+    display: none;
+}
+
+.mainmenubtn {
+    background-color: black;
+    color: white;
+    font-size: 120%;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 5%;
+    margin-top: 2%;
+}
+
+.mainmenubtn:hover {
+    background-color: blueviolet;
+}
+
+/* Para telas de 770px para cima (Desktop) */
+@media screen and (min-width: 770px) {
+    .icom1 {
+        width: 52%;
+        height: 100vh;  
+    }
+    
+    .cont1 {
+        margin-left: 53%;
+        margin-right: 1%; 
+        width: 100%;
+        height: 80vh;
+    }
+}
+
+/* Para telas de 501px até 769px (Tablets) */
+@media screen and (min-width: 501px) and (max-width: 769px) {
+    .icom1 {
+        width: 50%;
+        height: 100vh;
+    }
+}
+
+/* Para telas de 0px até 500px (Smartphones) */
+@media screen and (max-width: 500px) {
+    .aux_margin_smartphone {
+        margin-top: 50px;
+    }
+    
+    hr {
+        margin-top: 5%;
+        height: 4px; 
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+
+    h1 {
+        margin-top: 5%;
+        color: white;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 10px;
+        color: white;
+        display: none;
+    }
+
+    .icom1 {
+        width: 100%;
+        height: 100vh;
+        left: 50%;   
+        transform: translateX(-50%);
+        position: none;
+        display: none;
+    }
+    
+    body {
+        display: block;
+        background-image: url('/public/imagens/img2.jpg');
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    
+    .cont1 {
+        margin-left: 1%;   
+        margin-right: 1%; 
+        margin-top: 22%; 
+        margin-bottom: 0%;  
+        width: 100%;
+        height: 70vh;
+        display: inline-block;
+    }
+    
+    .mainmenubtn_geral {
+        font-size: 18px;
+        height: 50px;
+    }
+}
+ 
+/* ---------------------------- */
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

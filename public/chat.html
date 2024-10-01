@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatizando</title>
+    <link rel="stylesheet" href="public/css/css2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.min.js"></script>
+
+
+
+
+
+    <script src="public/js/js_cliente.js"></script>
+ 
+</head>
+<body>
+
+
+<!-- ============================================================================================= -->
+<!-- Seção de autenticação -->
+
+<div class="pag_nao_auth">
+    <center>
+        <h1>Ops, você não está autenticado!</h1>
+        <p>
+            Para acessar as salas, por favor retorne à página principal e repita o processo de autenticação.
+            <a href="http://192.168.0.114:3000/chatzando">
+              <br><br><br>
+                <button class="btn">Voltar</button>
+            </a>
+        </p>
+    </center>
+</div>
+
+<div class="pag_auth"> 
+
+  
+  <!-- ============================================================================================= -->
+
+  <div class="menufixo">
+ 
+        <button class="image-button-menu" onclick="inflarMenuMobile () ">Menu</button>
+ 
+       <center >
+         <div class="titulo" ></div>
+      </center >
+         
+    </div>
+
+
+    <div class="conteiner_lateral">
+              <!-- <button class="btn"onclick="inflarMenuMobile () ">Dimunuir menu </button> -->
+
+              <br><br>
+      <center>
+            <h4><div class="titulo-chat"></div> </h4> 
+        </center>
+                <a href="http://192.168.0.114:3000/chatzando"><button class="btn"  >Sair da sala </button></a>
+
+        <button class="btn" onclick="inflarAddUser()">Novo usuário </button>
+
+        <div class="addNovosUser">
+            <input type="text" placeholder="email do novo usuário " id="newUser"></input> 
+            <button onclick="addUsuarios()" class='btn'  >Adicionar</button>
+      </div>
+      <br><hr>
+      <center>
+        <h3>Usuários da sala</h3>
+
+      </center>
+
+      <div class = "apontamentoUser"> </div> 
+
+
+
+
+    
+
+
+  </div>
+   
+  <!-- ============================================================================================= -->
+  <!-- Área de chat  ver -->
+
+  <div class ="conteiner_out_msg"> </div>
+
+
+
+
+ 
+  <div class="conteiner_inputs">
+      <textarea id="chat-area" > </textarea>
+      <button  class="image-button-enviar-imput" onclick="enviarMsg()"> Enviar </button>
+
+  </div>
+
+
+
+
+</div>
+
+
+
+</body>
+</html>

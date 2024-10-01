@@ -1,0 +1,31 @@
+{
+  "name": "chat1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cor": "^0.0.0",
+    "cors": "^2.8.5",
+    "corss": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "engine": "^1.0.0",
+    "express": "^4.19.2",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.14",
+    "pacth": "^0.0.1",
+    "path": "^0.12.7",
+    "pg": "^8.12.0",
+    "pool": "^0.4.1",
+    "socket.io": "^4.7.5",
+    "ws": "^8.18.0",
+    "wsio": "^1.0.0"
+  }
+}
